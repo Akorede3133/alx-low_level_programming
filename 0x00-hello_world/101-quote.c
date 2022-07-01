@@ -14,4 +14,4 @@ int main(void)
 
 	write(2, str, length);
 	return (1);
-}	
+}
