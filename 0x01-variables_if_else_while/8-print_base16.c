@@ -8,7 +8,7 @@ int main(void)
 	int n, c;
 
 	n = 0;
-	while (n <=9)
+	while (n <= 9)
 	{
 		putchar(n % 10 + '0');
 		n++;
