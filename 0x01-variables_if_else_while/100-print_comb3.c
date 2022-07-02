@@ -5,18 +5,23 @@
  */
 int main(void)
 {
-	int n;
+	int n, m;
 
-	n = 1;
-	while (n <=89)
+	for (n =48; n <= 56; n++)
 	{
-		if (n <= 9)
+		for (m = 49; m <=57; m++)
 		{
-			putchar('0');
+			if (m > n)
+			{
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m!=57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-
-		putchar(n % 10 + '0');
-		n++;
 	}
 	putchar('\n');
 	return (0);
