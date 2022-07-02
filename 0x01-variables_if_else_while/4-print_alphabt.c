@@ -5,14 +5,13 @@
  */
 int main(void)
 {
-	int c;
+	char c;
 
 	c = 'a';
-	while (c <= 'z')
+	while (c <='z')
 	{
-		if (c != 'e' || c != 'q')
-			putchar('');
-		putchar(c);
+		if (c != 'e' && c != 'q')
+			putchar(c);
 		c++;
 	}
 	putchar('\n');
