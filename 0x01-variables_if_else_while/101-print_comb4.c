@@ -1,11 +1,13 @@
 #include <stdio.h>
 /**
  * main- print whatver
- * Return : 0 always
+ * Return: 0 always
  */
 int main(void)
 {
 	int i, j, k;
+
+
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 1; j < 10; j++)
@@ -14,14 +16,14 @@ int main(void)
 			{
 				if (k > j && j > i)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
-				}
-				if (i != 7 || j != 8)
-				{
-					putchar(',');
-					putchar(' ');
+					putchar(i % 10 + '0');
+					putchar(j % 10 + '0');
+					putchar(k % 10 + '0');
+					if ( i != 7 || j != 8 || k != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
