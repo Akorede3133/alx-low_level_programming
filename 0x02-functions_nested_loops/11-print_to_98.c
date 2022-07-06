@@ -4,8 +4,8 @@
 /**
  * print_to_98 - prints to 98
  * @n: para
- * @n: para 1
- * @n: para 2
+ * @n greater: para 1
+ * @n less: para 2
  * Return: 0 always
  */
 
@@ -31,6 +31,7 @@ void greater(int n)
 			printf("%c%c", ',', ' ');
 		}
 	}
+	printf("%c". '\n');
 }
 
 void less(int n)
@@ -43,4 +44,5 @@ void less(int n)
 		if (i != 98)
 			printf("%c%c", ',', ' ');
 	}
+	printf("%c", '\n');
 }
