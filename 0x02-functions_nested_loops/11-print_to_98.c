@@ -7,6 +7,9 @@
  * Return: 0 always
  */
 
+void greater(int n);
+void less(int n);
+
 void print_to_98(int n)
 {
 	greater(n);
