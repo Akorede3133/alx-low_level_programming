@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * is_lower - checks for lower case letters
+ * _islower - checks for lower case letters
+ * c, the parameter to check
  * Return: 0 always
  */
 
@@ -14,5 +15,5 @@ int _islower(int c)
 		result = 1;
 	else
 		result = 0;
-	return result;
+	return (result);
 }
