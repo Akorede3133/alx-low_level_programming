@@ -31,7 +31,7 @@ void greater(int n)
 			printf("%c%c", ',', ' ');
 		}
 	}
-	printf("%c". '\n');
+	printf("%c", '\n');
 }
 
 void less(int n)
