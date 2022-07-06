@@ -16,11 +16,11 @@ void jack_bauer(void)
 			{
 				for (l = 0; l < 10; l++)
 				{
-					_putchar(i);
-					_putchar(j);
+					_putchar(i % 10 + '0');
+					_putchar(j % 10 + '0');
 					_putchar(':');
-					_putchar(k);
-					_putchar(l);
+					_putchar(k % 10 + '0');
+					_putchar(l %  10 + '0');
 					if ( i != 2 || j != 3 || k != 5 || l != 9)
 					{
 						_putchar('\n');
