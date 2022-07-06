@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - prints to 98
@@ -16,23 +17,18 @@ void print_to_98(int n)
 		{
 			if (i > 99)
 			{
-				_putchar(i / 100 + '0');
-				_putchar(i / 10 % 10 + '0');
-				_putchar(i % 10 + '0');
+				printf("%d", i);
 				if (i != 98)
 				{
-					_putchar(',');
-					_putchar(' ');
+					printf("%c%c", ',', ' ');
 				}
 			}
 			else if  (i > 9)
 			{
-				_putchar(i / 10 + '0');
-				_putchar(i % 10 + '0');
+				printf("%d", i);
 				if (i != 98)
 				{
-					_putchar(',');
-					_putchar(' ');
+					printf("%c%c", ',' ' ');
 				}
 			}
 			else
@@ -40,11 +36,11 @@ void print_to_98(int n)
 				_putchar(i % 10 + '0');
 				if (i != 98)
 				{
-					_putchar(',');
-					_putchar(' ');
+					printf("%c%c", ',', ' ');
 				}
 			}
 		}
+		_putchar('\n');
 	}
 	else
 	{
@@ -52,12 +48,10 @@ void print_to_98(int n)
 		{
 			if (i > 9)
 			{
-				_putchar(i / 10 + '0');
-				_putchar(i % 10 + '0');
+				printf("%d", i);
 				if (i != 98)
 				{
-					_putchar(',');
-					_putchar(' ');
+					printf("%c%c", ',', ' ');
 				}
 			}
 			else
@@ -65,10 +59,10 @@ void print_to_98(int n)
 				_putchar(i % 10 + '0');
 				if (i != 98)
 				{
-					_putchar(',');
-					_putchar(' ');
+					printf("%c%c", ',', ' ');
 				}
 			}
 		}
+		_putchar('\n');
 	}
 }
