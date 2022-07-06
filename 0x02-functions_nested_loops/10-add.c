@@ -2,12 +2,12 @@
 
 /**
  * add - add two nums
- * @int: first num
- * @int: second num
+ * @i: first num
+ * @j: second num
  * Return: 0 success
  */
 
-int add(int i, int j)
+int add(int, int)
 {
 	int result;
 
