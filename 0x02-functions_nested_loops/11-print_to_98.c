@@ -4,13 +4,13 @@
 /**
  * print_to_98 - prints to 98
  * @n: para
- * @n greater: para 1
- * @n less: para 2
+ * @g: para 1
+ * @l: para 2
  * Return: 0 always
  */
 
-void greater(int n);
-void less(int n);
+void greater(int g);
+void less(int l);
 
 void print_to_98(int n)
 {
@@ -19,11 +19,11 @@ void print_to_98(int n)
 	else
 		less(n);
 }
-void greater(int n)
+void greater(int g)
 {
 	int i;
 
-	for (i = n; i >= 98; i++)
+	for (i = g; i >= 98; i--)
 	{
 		printf("%d", i);
 		if (i != 98)
@@ -34,11 +34,11 @@ void greater(int n)
 	printf("%c", '\n');
 }
 
-void less(int n)
+void less(int l)
 {
 	int i;
 
-	for (i = n; i <= 98; i++)
+	for (i = l; i <= 98; i++)
 	{
 		printf("%d", i);
 		if (i != 98)
