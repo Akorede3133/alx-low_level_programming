@@ -16,5 +16,6 @@ void print_alphabet_x10(void)
 			l++;
 		}
 		_putchar('\n');
+		i++;
 	}
 }
