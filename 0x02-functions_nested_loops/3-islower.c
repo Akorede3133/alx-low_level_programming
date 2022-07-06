@@ -5,7 +5,7 @@
  * Return: 0 always
  */
 
-int is_lower(int c)
+int _islower(int c)
 {
 	int result;
 
