@@ -4,45 +4,27 @@
 /**
  * print_to_98 - prints to 98
  * @n: para
- * @g: para 1
- * @l: para 2
  * Return: 0 always
  */
-
-void greater(int g);
-void less(int l);
 
 void print_to_98(int n)
 {
 	if (n > 98)
-		greater(n);
-	else
-		less(n);
-}
-void greater(int g)
-{
-	int i;
-
-	for (i = g; i >= 98; i--)
 	{
-		printf("%d", i);
-		if (i != 98)
+		for (i = n; i >= 98; i--)
 		{
-			printf("%c%c", ',', ' ');
+			printf("%d", i);
+			if (i != 98)
+				printf("%c%c", ',', ' ');
 		}
+		printf("%c",'\n');
 	}
-	printf("%c", '\n');
-}
-
-void less(int l)
-{
-	int i;
-
-	for (i = l; i <= 98; i++)
+	else
 	{
-		printf("%d", i);
-		if (i != 98)
-			printf("%c%c", ',', ' ');
-	}
-	printf("%c", '\n');
-}
+		for (i = n; i <= 98; i++)
+		{
+			printf("%d", i);
+			if (i != 98)
+				printf("%c%c", ',', ' ');
+		}
+		printf("%c", '\n');
