@@ -4,6 +4,8 @@
 /**
  * print_to_98 - prints to 98
  * @n: para
+ * @n: para 1
+ * @n: para 2
  * Return: 0 always
  */
 
@@ -12,8 +14,10 @@ void less(int n);
 
 void print_to_98(int n)
 {
-	greater(n);
-	less(n);
+	if (n > 98)
+		greater(n);
+	else
+		less(n);
 }
 void greater(int n)
 {
