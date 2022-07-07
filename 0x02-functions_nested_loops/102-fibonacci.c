@@ -9,10 +9,6 @@ int main(void)
 
 	a = 0;
 	b = 1;
-	printf("%ld%c", a, ',');
-	printf("%c", ' ');
-	printf("%ld%c", b, ',');
-	printf("%c", ' ');
 	for (i = 0; i < 50; i++)
 	{
 		c = a + b;
