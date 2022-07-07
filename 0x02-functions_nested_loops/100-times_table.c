@@ -5,9 +5,9 @@
  * @n: para
  * Return: 0 always
  */
-void less_than_ten(void);
-void less_than_hund(void);
-void greater(void);
+void less_than_ten();
+void less_than_hund();
+void greater();
 
 void print_times_table(int n)
 {
@@ -51,20 +51,20 @@ void print_times_table(int n)
 	}
 }
 
-void less_than_ten(void)
+void less_than_ten()
 {
 	_putchar(',');
 	_putchar(' ');
 	_putchar(' ');
 	_putchar(' ');
 }
-void less_than_hund(void)
+void less_than_hund()
 {
 	_putchar(',');
 	_putchar(' ');
 	_putchar(' ');
 }
-void greater(void)
+void greater()
 {
 	_putchar(',');
 	_putchar(' ');
