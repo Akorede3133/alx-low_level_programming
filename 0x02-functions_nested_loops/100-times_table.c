@@ -3,11 +3,16 @@
 /**
  * print_times_table - print timestable
  * @n: para
+ * less_than_ten - assist
+ * less_than_hund - assist
+ * greater - assist
+ * void: void
  * Return: 0 always
  */
-void less_than_ten();
-void less_than_hund();
-void greater();
+ 
+void less_than_ten(void);
+void less_than_hund(void);
+void greater(void);
 
 void print_times_table(int n)
 {
@@ -51,20 +56,20 @@ void print_times_table(int n)
 	}
 }
 
-void less_than_ten()
+void less_than_ten(void)
 {
 	_putchar(',');
 	_putchar(' ');
 	_putchar(' ');
 	_putchar(' ');
 }
-void less_than_hund()
+void less_than_hund(void)
 {
 	_putchar(',');
 	_putchar(' ');
 	_putchar(' ');
 }
-void greater()
+void greater(void)
 {
 	_putchar(',');
 	_putchar(' ');
