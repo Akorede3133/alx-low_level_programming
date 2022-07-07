@@ -27,12 +27,24 @@ void print_times_table(int n)
 					if (j == 0)
 						_putchar(res % 10 + '0');
 					else
+					{
 						less_than_ten();
+						_putchar(res % 10 + '0');
+					}
 				}
 				else if (res < 100)
+				{
 					less_than_hund();
+					_putchar(res / 10 + '0');
+					_putchar(res % 10 + '0');
+				}
 				else
+				{
 					greater();
+					_putchar(res / 100 + '0');
+					_putchar(res / 10 % 10 + '0');
+					_putchar(res % 10 + '0');
+				}
 			}
 			_putchar('\n');
 		}
@@ -45,21 +57,15 @@ void less_than_ten(void)
 	_putchar(' ');
 	_putchar(' ');
 	_putchar(' ');
-	_putchar(res % 10 + '0');
 }
 void less_than_hund(void)
 {
 	_putchar(',');
 	_putchar(' ');
 	_putchar(' ');
-	_putchar(res / 10 + '0');
-	_putchar(res % 10 + '0');
 }
 void greater(void)
 {
 	_putchar(',');
 	_putchar(' ');
-	_putchar(res / 100 + '0');
-	_putchar(res / 10 % 10 + '0');
-	_putchar(res % 10 + '0');
 }
