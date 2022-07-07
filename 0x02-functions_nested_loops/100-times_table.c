@@ -2,10 +2,10 @@
 
 /**
  * print_times_table - print timestable
+ * less_than_ten - if less than ten
+ * less_than_hund - if less than 100
+ * greater - if greater
  * @n: para
- * less_than_ten - assist
- * less_than_hund - assist
- * greater - assist
  * void: void
  * Return: 0 always
  */
@@ -13,7 +13,6 @@
 void less_than_ten(void);
 void less_than_hund(void);
 void greater(void);
-
 void print_times_table(int n)
 {
 	int i, j;
@@ -54,6 +53,8 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
+	else if (n == 0)
+		_putchar(n % 10 = '0');
 }
 
 void less_than_ten(void)
