@@ -5,6 +5,9 @@
  * @n: para
  * Return: 0 always
  */
+void less_than_ten(void);
+void less_than_hund(void);
+void greater(void);
 
 void print_times_table(int n)
 {
@@ -12,7 +15,6 @@ void print_times_table(int n)
 
 	if (n < 16 && n > 0)
 	{
-
 		for (i = 0; i < n + 1; i++)
 		{
 			for (j = 0; j < n + 1; j++)
@@ -25,32 +27,39 @@ void print_times_table(int n)
 					if (j == 0)
 						_putchar(res % 10 + '0');
 					else
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(res % 10 + '0');
-					}
+						less_than_ten();
 				}
 				else if (res < 100)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(res / 10 + '0');
-					_putchar(res % 10 + '0');
-				}
+					less_than_hund();
 				else
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(res / 100 + '0');
-					_putchar(res / 10 % 10 + '0');
-					_putchar(res % 10 + '0');
-				}
+					greater();
 			}
 			_putchar('\n');
 		}
 	}
+}
+
+void less_than_ten(void)
+{
+	_putchar(',');
+	_putchar(' ');
+	_putchar(' ');
+	_putchar(' ');
+	_putchar(res % 10 + '0');
+}
+void less_than_hund(void)
+{
+	_putchar(',');
+	_putchar(' ');
+	_putchar(' ');
+	_putchar(res / 10 + '0');
+	_putchar(res % 10 + '0');
+}
+void greater(void)
+{
+	_putchar(',');
+	_putchar(' ');
+	_putchar(res / 100 + '0');
+	_putchar(res / 10 % 10 + '0');
+	_putchar(res % 10 + '0');
 }
