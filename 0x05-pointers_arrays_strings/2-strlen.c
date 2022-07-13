@@ -8,9 +8,13 @@
 
 int _strlen(char *s)
 {
-	int i;
+	int i, sum;
 
-	for(i = 0; *s; i++)
-		_putchar(*s++);
-	return (0);
+	sum = 0;
+
+	for (i = 0; *s; i++)
+	{
+		sum++;
+	}
+	return (sum);
 }
