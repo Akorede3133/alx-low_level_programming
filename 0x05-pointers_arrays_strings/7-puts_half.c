@@ -1,43 +1,25 @@
 #include "main.h"
 
 /**
- * puts_half - half
+ * puts_half - reverse
  * @str: para
  */
-int length(char *str);
-
 void puts_half(char *str)
 {
-	int j, val;
+	int i, len;
 
-	val = length(*str);
-
-	for (j = 0; str[j] != '\0'; j++)
+	len = 0;
+	while (s[len] != '\0')
 	{
-		if (j > (val - 1) / 2)
+		len++;
+	}
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (i > (len - 1) / 2)
 		{
-			_putchar(str[j]);
+			_putchar(str[i]);
 		}
 	}
 	_putchar('\n');
 }
-
-/**
- * length - length
- * @str: para
- * Return: 0 always
- */
-int length(char *str)
-{
-	int i, sum;
-
-	sum = 0;
-
-	for (i = 0; *str; i++)
-	{
-		sum++;
-		str++;
-	}
-	return (sum);
-}
-
