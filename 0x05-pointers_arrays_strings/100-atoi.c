@@ -18,10 +18,10 @@ int _atoi(char *s)
 		if (s[i] >= 48 && s[i] <= 57)
 		{
 			num = num * 10 + (s[i] - 48);
-			if (s[i - 1] == '-' || s[i - 1] == '+')
+			if (s[i - 1] == '-' && s[i - 1] == '+')
 				neg = -1;
 		}
-		if (s[i] == '-' || s[i] == '+')
+		if (s[i] == '-' && s[i] == '+')
 			neg = -1;
 	}
 	return (num * neg);
