@@ -28,9 +28,9 @@ void print_rev(char *s)
 
 	for (i = 0; i < len / 2; i++)
 	{
-		temp = *beg;
-		*beg = *end;
-		*end = temp;
+		temp = *end;
+		*end = *beg;
+		*beg = temp;
 
 		beg++;
 		end--;
