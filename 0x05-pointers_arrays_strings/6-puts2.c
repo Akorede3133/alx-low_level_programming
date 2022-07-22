@@ -2,7 +2,7 @@
 
 /**
  * puts2 - prints by even
- * @str - para
+ * @str: para
  */
 
 void puts2(char *str)
