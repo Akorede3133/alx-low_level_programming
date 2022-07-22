@@ -23,10 +23,10 @@ void print_rev(char *s)
 	end = s;
 	beg = s;
 
-	for (i = 0; i < length - 1; i++)
+	for (i = 0; i < len - 1; i++)
 		end++;
 
-	for (i = 0; i < length / 2; i++)
+	for (i = 0; i < len / 2; i++)
 	{
 		temp = *beg;
 		*beg = *end;
