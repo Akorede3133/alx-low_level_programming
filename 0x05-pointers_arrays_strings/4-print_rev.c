@@ -4,12 +4,35 @@
  * print_rev - reverse
  * @s: para
  */
+int length(char *s)
+{
+	int i = 0;
 
+	while(s[i] != '\0')
+	{
+		i++;
+	}
+	return i;
+}
 void print_rev(char *s)
 {
-	int i;
+	int i, len;
+	char *end, temp, *beg;
 
-	for (i = '\0'; *s >= 0; i--)
-		_putchar(*s--);
-	_putchar('\n');
+	len = length(s);
+	end = s;
+	beg = s;
+
+	for (i = 0; i < length - 1; i++)
+		end++;
+
+	for (i = 0; i < length / 2; i++)
+	{
+		temp = *beg;
+		*beg = *end;
+		*end = temp;
+
+		beg++;
+		end--;
+	}
 }
