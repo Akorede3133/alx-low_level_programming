@@ -4,15 +4,20 @@
  * rev_string - reverse
  * @s: para
  */
+/**
+ * length - len
+ * @s: para
+ * Return: int
+ */
 int length(char *s)
 {
 	int i = 0;
 
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
-	return i;
+	return (i);
 }
 void rev_string(char *s)
 {
