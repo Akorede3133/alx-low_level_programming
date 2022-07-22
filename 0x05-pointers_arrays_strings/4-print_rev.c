@@ -31,8 +31,7 @@ void print_rev(char *s)
 		temp = *end;
 		*end = *beg;
 		*beg = temp;
-
-		beg++;
 		end--;
+		beg++;
 	}
 }
