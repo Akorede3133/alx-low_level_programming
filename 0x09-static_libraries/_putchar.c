@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
- * _putcahr - putcahr
+ * _putchar - putcahr
  * @c: para
  * Return: int
  */
