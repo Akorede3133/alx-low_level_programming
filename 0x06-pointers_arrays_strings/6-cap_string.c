@@ -8,20 +8,30 @@
 
 char *cap_string(char *s)
 {
-	int i, diff;
+	int i, diff, j, len;
+	char a[] = " \t\n,;.!?\"(){}";
 
 	diff = 'a' - 'A';
-	for (i = 0; s[i] != '\0'; i++)
+	len = 0;
+	while (a[len] != '\0')
 	{
-		if ((s[i - 1] >= 32 && s[i - 1] <= 41))
+		len++;
+	}
+
+	for (j = 0; j < len; j++)
+	{
+		for (i = 0; s[i] != '\0'; i++)
 		{
-			if (s[i] <= 'z' && s[i] >= 'a')
+			if (s[i - 1] == a[j])
 			{
-				s[i] = s[i] - diff;
-			}
-			else
-			{
-				s[i] = s[i];
+				if (s[i] <= 'z' && s[i] >= 'a')
+				{
+					s[i] = s[i] - diff;
+				}
+				else
+				{
+					s[i] = s[i];
+				}
 			}
 		}
 	}
