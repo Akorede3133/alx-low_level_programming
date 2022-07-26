@@ -9,7 +9,7 @@
 char *cap_string(char *s)
 {
 	int i, diff, j, len;
-	char a[] = " \n,;.!?\"(){}";
+	char a[] = " \t\n,;.!?\"(){}";
 
 	diff = 'a' - 'A';
 	len = 0;
