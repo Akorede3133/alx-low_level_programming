@@ -13,7 +13,7 @@ char *cap_string(char *s)
 	diff = 'a' - 'A';
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((s[i - 1] >= 32 && s[i - 1] <= 47))
+		if ((s[i - 1] >= 32 && s[i - 1] <= 41))
 		{
 			if (s[i] <= 'z' && s[i] >= 'a')
 			{
