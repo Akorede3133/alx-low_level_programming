@@ -4,7 +4,7 @@
 /**
  * main - main
  * @argc: arg count
- * @argv[]: arg vector
+ * @argv: arg vector
  * Return: 0 always
  */
 
