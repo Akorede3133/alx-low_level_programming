@@ -11,7 +11,7 @@ int _isupper(int c);
 int _isdigit(int c);
 int _strlen(char *s);
 void _puts(char *s);
-int *_strcpy(char *dest, char *src);
+char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
