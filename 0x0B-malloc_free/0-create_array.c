@@ -24,6 +24,10 @@ char *create_array(unsigned int size, char c)
 				ptr[i] = c;
 			}
 		}
+		else
+		{
+			ptr = NULL;
+		}
 		return (ptr);
 	}
 	else
