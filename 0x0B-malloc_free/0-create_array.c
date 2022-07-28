@@ -10,17 +10,17 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int *ptr;
+	char *ptr;
 
 	ptr = malloc(size);
 
 	if (ptr != NULL)
 	{
 		ptr[0] = c;
-		return (0);
+		return (create_array);
 	}
 	else
 	{
-		return (1);
+		return (NULL);
 	}
 }
