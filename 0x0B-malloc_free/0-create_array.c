@@ -18,4 +18,8 @@ char *create_array(unsigned int size, char c)
 	{
 		ptr[0] = c;
 	}
+	else
+	{
+		return (1);
+	}
 }
