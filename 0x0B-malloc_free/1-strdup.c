@@ -12,30 +12,30 @@ char *_strdup(char *str)
 	char *ptr;
 	int i, len;
 
-	len = 0;
-	while (str[len] != '\0')
+	if (str == NULL)
 	{
-		len++;
+		return (NULL);
 	}
-	ptr = malloc(sizeof(char) * len + 1);
-
-	if (ptr != NULL)
+	else
 	{
-		if (str != '\0')
+		len = 0;
+		while (str != '\0')
 		{
-			for (i = 0; str[i] != '\0'; i++)
+			len++;
+		}
+		ptr = malloc(sizeof(char) * len + 1);
+		if (ptr == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			for (i = 0; *str[i] != '\0'; i++)
 			{
 				ptr[i] = str[i];
 			}
 		}
-		else
-		{
-			ptr = NULL;
-		}
-		return (ptr);
 	}
-	else
-	{
-		return (NULL);
-	}
+	return (ptr);
+
 }
