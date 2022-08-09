@@ -7,17 +7,17 @@
  * Return: char
  */
 
-char *_strchr(char *s, char b)
+char *_strchr(char *s, char c)
 {
 	while (*s != '\0')
 	{
-		if (*s == b)
+		if (*s == c)
 		{
 			return (s);
 		}
 		s++;
 	}
-	if (*s == b)
+	if (*s == c)
 	{
 		return (s);
 	}
