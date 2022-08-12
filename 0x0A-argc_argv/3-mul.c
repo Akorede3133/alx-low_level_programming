@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, res = 1;
+	int i, res = 1;
 
 	if (argc > 1)
 	{
