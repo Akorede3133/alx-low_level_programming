@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * main - main
@@ -16,10 +18,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			for (j = 0; j < 1; j++)
-			{
-				res *= argv[i][j] - '0';
-			}
+			res *= atoi(argv[i]);
 		}
 		printf("%d\n", res);
 		return (0);
