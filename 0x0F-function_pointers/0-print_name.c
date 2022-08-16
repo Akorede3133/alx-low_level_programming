@@ -1,6 +1,4 @@
 #include <stdio.h>
-#ifndef FUNCTION_POINTERS_H
-#define
 /**
  * print_name - print name
  * @name: name
@@ -12,4 +10,3 @@ void print_name(char *name, void (*f)(char *))
 {
 	f(name);
 }
-#endif
