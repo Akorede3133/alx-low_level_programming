@@ -23,6 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	sz = read(fd, (void *)filename, letters);
+	sz = read(fd, filename, letters);
+	close(fd);
 	return (sz);
 }
