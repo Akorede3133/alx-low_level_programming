@@ -9,7 +9,7 @@
  * Return: int
  */
 
-ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(char *filename, size_t letters)
 {
 	size_t sz;
 	int fd;
@@ -21,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	else
 	{
-		sz = read(fd, (void *)filename, letters);
+		sz = read(fd, filename, letters);
 		return (sz);
 	}
 }
