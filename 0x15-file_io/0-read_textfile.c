@@ -9,9 +9,9 @@
  * Return: int
  */
 
-ssize_t read_textfile(char *filename, size_t letters)
+int read_textfile(char *filename, size_t letters)
 {
-	size_t sz;
+	int sz;
 	int fd;
 
 	fd = open(filename, O_RDRW);
