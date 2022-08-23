@@ -11,7 +11,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t sz;
+	size_t sz;
 	int fd;
 
 	fd = open(filename, O_RDRW);
@@ -19,7 +19,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	sz = read(fd, (void *)filename, letters);
-	close(fd);
-	return (sz);
+	else
+	{
+		sz = read(fd, (void *)filename, letters);
+		return (sz);
+	}
 }
