@@ -9,7 +9,7 @@
  * Return: int
  */
 
-int read_textfile(char *filename, size_t letters)
+int read_textfile(char *filename, int letters)
 {
 	int sz;
 	int fd;
@@ -21,7 +21,7 @@ int read_textfile(char *filename, size_t letters)
 	}
 	else
 	{
-		sz = read(fd, filename, letters);
+		sz = read(fd, (void *)filename, letters);
 		return (sz);
 	}
 }
