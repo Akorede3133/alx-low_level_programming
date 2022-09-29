@@ -19,7 +19,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		num_count++;
 		count_ptr = count_ptr->next;
 	}
-	if (index < 0 || index > num_count - 1)
+	if (index < 0 || (index > (num_count - 1)))
 	{
 		return (NULL);
 	}
