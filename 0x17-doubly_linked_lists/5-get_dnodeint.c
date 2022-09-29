@@ -10,6 +10,7 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *count_ptr = head;
+	dlistint_t *temp = head;
 	unsigned int num_count = 0; 
 	int unsigned int i;
 
@@ -26,8 +27,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{
 		for (i = 0; i < index; i++)
 		{
-			head = head->next;
+			temp = temp->next;
 		}
-		return (head);
+		return (temp);
 	}
 }
