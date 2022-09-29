@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * free_dlistint - frees list
  * @head: pointer to head
